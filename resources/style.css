@@ -1,0 +1,101 @@
+* {
+  border-sizing: border-box;
+}
+
+html {
+  font-family: "Helvetica", sans-serif;
+  font-size: 12px;
+  background-color: white;
+}
+
+body {
+  line-height: 1.4;
+}
+
+
+.container {
+  max-width: auto;
+  margin: auto;
+}
+
+/* Header CSS */
+header {
+  border: 1px solid red;
+  height: 64px;
+  display: flex;
+  align-items: center;
+
+}
+
+
+
+
+nav.container {
+  border: 1px solid red;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  padding-left: 1.4em;
+  padding-right: 1.4em;
+
+
+}
+
+nav div {
+  display: flex;
+  align-items: center;
+
+}
+
+nav li {
+  display: inline;
+  padding: 0 .5em;
+
+}
+
+a {
+  text-decoration: none;
+  color: grey;
+  font-size: 1rem
+}
+
+.logo span {
+  font-size: 1.2em;
+  font-weight: 300;
+  line-height: 2em;
+}
+
+.logo span:first-of-type {
+  font-weight: 600;
+}
+
+.mobile {
+  display: none;
+}
+
+@media only screen and (max-width: 480px) {
+  .logo span {
+    display: none;
+  }
+
+  .desktop {
+    display: none;
+  }
+
+ .mobile {
+    display: flex;
+  }
+
+ .logo {
+   width: 25%;
+ }
+
+ div {
+   width: 75%;
+ }
+
+ div ul {
+   justify-content: space-between;
+   width: 100%;
+ }
+}
