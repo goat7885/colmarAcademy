@@ -1,11 +1,12 @@
 * {
-  border-sizing: border-box;
+  box-sizing: border-box;
 }
 
 html {
   font-family: "Helvetica", sans-serif;
-  font-size: 12px;
+  font-size: 18px;
   background-color: white;
+  color: darkgrey;
 }
 
 body {
@@ -24,7 +25,6 @@ header {
   height: 64px;
   display: flex;
   align-items: center;
-
 }
 
 
@@ -35,22 +35,18 @@ nav.container {
   display: flex;
   width: 100%;
   justify-content: space-between;
-  padding-left: 1.4em;
-  padding-right: 1.4em;
-
-
+  padding-left: 2em;
+  padding-right: 2em;
 }
 
 nav div {
   display: flex;
   align-items: center;
-
 }
 
 nav li {
   display: inline;
   padding: 0 .5em;
-
 }
 
 a {
@@ -98,4 +94,181 @@ a {
    justify-content: space-between;
    width: 100%;
  }
+}
+
+/* BANNER */
+
+.banner {
+  border: 1px solid red;
+  display: flex;
+  align-items: center;
+  padding: 2rem 1.5rem;
+  background-color: lightgrey;
+  color: grey;
+  justify-content: center;
+  align-items: center;
+
+ }
+
+div .banner {
+  display: block;
+}
+
+.banner-image {
+  width: 60%;
+}
+
+.banner img {
+  width: 100%;
+}
+
+
+.banner-content {
+  width: 40%;
+  border: 1px solid red;
+
+}
+
+.banner-text {
+  border: 1px solid red;
+  margin-left: 2rem;
+  margin-right: 2rem;
+  width: 100%;
+  text-align: center;
+}
+
+.banner-content h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  padding-bottom: 2rem;
+  line-height: 1.2;
+
+}
+
+h1 span {
+  display: block;
+
+}
+
+p span {
+  display: block;
+}
+
+.banner-content p {
+  font-size: 1.25rem;
+  font-weight: 300;
+  padding-bottom: 3rem;
+}
+
+.banner .banner-text a {
+  padding: .75rem 7rem;
+  font-size: 1.25rem;
+  font-weight: 300;
+  color: white;
+  background-color: grey;
+  width: 100%;
+  text-align: center;
+}
+
+
+@media only screen and (max-width: 920px) {
+  .banner {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .banner-content {
+    display: flex;
+    width: 100%;
+    align-content: center;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+  }
+
+  .banner-image{
+    width: 100%;
+  }
+
+}
+
+@media only screen and (max-width: 475px) {
+  .banner-content h1 {
+    font-size: 2rem;
+  }
+
+  .banner-content p {
+    font-size: .75rem;
+  }
+
+  .banner .banner-text a {
+    font-size: .75rem;
+    width: 100%;
+  }
+}
+
+
+/* INFORMATION */
+
+.info-mobile {
+  display: none;
+}
+
+.info {
+  display: flex;
+  padding: 2rem 0 2rem 1.5rem;
+
+}
+
+.info-left {
+  border: 1px solid red;
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  justify-content: space-between;
+  padding-right: 1.5rem;
+
+}
+
+.info-left h2 {
+  font-size: 3rem;
+  padding-top: 2rem;
+  padding-bottom: 1rem;
+}
+
+.info-left p {
+  padding-bottom: 2rem;
+  padding-top: .75rem;
+}
+
+.info-left span {
+  padding-bottom: 2rem;
+}
+
+.info-right {
+  border: 1px solid red;
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  padding-bottom: 2rem;
+}
+
+ .info-box {
+  border: 1px solid red;
+  display: flex;
+  width: 100%;
+
+}
+
+.info-right .info-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding-left: 1.5rem;
+  width: 65%;
+}
+
+.info-right .info-box img {
+  padding: 2rem;
+  width: 35%;
+  height: auto;
 }
