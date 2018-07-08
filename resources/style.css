@@ -16,7 +16,7 @@ body {
 
 .container {
   max-width: auto;
-  margin: auto;
+  margin: 0 auto;
 }
 
 /* Header CSS */
@@ -69,7 +69,7 @@ a {
   display: none;
 }
 
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 730px) {
   .logo span {
     display: none;
   }
@@ -125,20 +125,19 @@ div .banner {
 
 .banner-content {
   width: 40%;
+  height: 100%;
   border: 1px solid red;
-
-}
-
-.banner-text {
-  border: 1px solid red;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   margin-left: 2rem;
-  margin-right: 2rem;
-  width: 100%;
-  text-align: center;
 }
+
+
 
 .banner-content h1 {
-  font-size: 3rem;
+  font-size: 2.75rem;
   font-weight: 700;
   padding-bottom: 2rem;
   line-height: 1.2;
@@ -155,43 +154,60 @@ p span {
 }
 
 .banner-content p {
-  font-size: 1.25rem;
+  font-size: 1.5rem;
   font-weight: 300;
-  padding-bottom: 3rem;
+  padding-bottom: 2rem;
 }
 
-.banner .banner-text a {
-  padding: .75rem 7rem;
+.banner-text a {
+  padding: 1rem 0;
   font-size: 1.25rem;
   font-weight: 300;
   color: white;
-  background-color: grey;
+  background: grey;
   width: 100%;
   text-align: center;
+  display: block;
 }
 
 
-@media only screen and (max-width: 920px) {
+@media only screen and (max-width: 1150px) {
   .banner {
-    flex-direction: column;
     width: 100%;
   }
 
   .banner-content {
-    display: flex;
-    width: 100%;
-    align-content: center;
-    padding-top: 1.5rem;
-    padding-bottom: 1.5rem;
+    width: 50%;
   }
 
   .banner-image{
+    width: 50%;
+  }
+
+
+}
+
+@media only screen and (max-width: 1000px) {
+  .banner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     width: 100%;
+  }
+
+  .banner-image {
+    width: 100%;
+  }
+
+  .banner-content {
+    width: 100%;
+    margin: 0;
   }
 
 }
 
-@media only screen and (max-width: 475px) {
+@media only screen and (max-width: 480px) {
   .banner-content h1 {
     font-size: 2rem;
   }
@@ -202,6 +218,11 @@ p span {
 
   .banner .banner-text a {
     font-size: .75rem;
+    width: 100%;
+    padding: .5rem 5rem;
+  }
+
+  .banner-content {
     width: 100%;
   }
 }
@@ -215,8 +236,19 @@ p span {
 
 .info {
   display: flex;
-  padding: 2rem 0 2rem 1.5rem;
+  padding: 2rem 0 0 1.5rem;
 
+
+}
+
+.info img {
+  height: 50%;
+}
+
+.info h1 {
+  font-size: 2rem;
+  padding-top: 1.75rem;
+  padding-bottom: 1.25rem;
 }
 
 .info-left {
@@ -224,24 +256,20 @@ p span {
   display: flex;
   flex-direction: column;
   width: 60%;
-  justify-content: space-between;
   padding-right: 1.5rem;
 
 }
 
-.info-left h2 {
-  font-size: 3rem;
-  padding-top: 2rem;
-  padding-bottom: 1rem;
-}
+
 
 .info-left p {
-  padding-bottom: 2rem;
-  padding-top: .75rem;
+  padding-bottom: 1.25rem;
+
 }
 
 .info-left span {
-  padding-bottom: 2rem;
+  padding-top: 1.75rem;
+  padding-bottom: 1.75rem;
 }
 
 .info-right {
@@ -249,26 +277,169 @@ p span {
   display: flex;
   flex-direction: column;
   width: 40%;
-  padding-bottom: 2rem;
+  padding-bottom: 1.75rem;
 }
 
  .info-box {
   border: 1px solid red;
   display: flex;
   width: 100%;
+  padding-right: 1rem;
 
 }
 
 .info-right .info-content {
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: center;
   padding-left: 1.5rem;
   width: 65%;
 }
 
 .info-right .info-box img {
-  padding: 2rem;
+  margin: 1.5rem;
   width: 35%;
-  height: auto;
+  height: 100%;
+}
+
+.info-content h3 {
+  font-size: 1.5rem;
+  font-weight: 400;
+  padding-bottom: .5rem;
+}
+
+.info-content p {
+  padding-bottom: .5rem;
+}
+
+@media only screen and (max-width: 1000px) {
+
+ .info-mobile {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 2rem;
+  }
+
+  .info-box {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 1rem 2.5rem 1rem 1rem;
+    justify-content: center;
+    align-items: center;
+    padding-right: 0;
+  }
+
+  .info-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
+    margin-left: 1rem;
+    margin-top: 1rem;
+  }
+
+  .info-box img {
+    width: 100%;
+  }
+
+
+  .info-left {
+    display: none;
+  }
+
+  .info-right {
+    display: none;
+  }
+
+}
+
+/* COURSES */
+
+  .mobile-courses {
+    display: none;
+  }
+
+  .courses h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 1.5rem 0 1.5rem;
+    font-size: 2rem;
+    border: 1px solid red;
+    padding: 2rem 0 2rem 0;
+    background-color: lightgrey;
+}
+
+  .courses-section {
+    border: 1px solid red;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 1.5rem;
+    justify-content: center;
+    background-color: lightgrey;
+
+  }
+
+  .courses-box {
+    border: 1px solid red;
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    margin: 0 0.75rem 1.5rem 0.75rem;
+    height: auto;
+  }
+
+  .courses-content {
+    display: flex;
+    border: 1px solid red;
+    flex-direction: column;
+  }
+
+  .courses-content h2 {
+    font-size: 1.5rem;
+    font-weight: 400;
+    margin: 1rem 0 0.5rem 1rem;
+  }
+
+  .courses-content h3 {
+    margin: 0 0 0.5rem 1rem;
+  }
+
+  .courses-content p {
+    margin: 0 0.5rem 0.5rem 1rem;
+  }
+
+@media only screen and (max-width: 892px) {
+
+  .courses {
+    display: none;
+  }
+
+  .mobile-courses {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+  }
+
+  .mobile-courses h1 {
+    padding-bottom: 1rem;
+    font-size: 2rem;
+    font-weight: 400;
+    text-align: center;
+  }
+
+  .mobile-courses h2 {
+    border: 1px solid red;
+    font-size: 1.5rem;
+    padding: 1rem 1rem 1.25rem 1rem;
+    margin: 0.5rem 1rem;
+    background-color: lightgrey;
+  }
+
 }
