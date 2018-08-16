@@ -443,3 +443,62 @@ p span {
   }
 
 }
+
+/* thesis */
+
+.thesis h1{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 1.5rem 0 1.5rem;
+  font-size: 2rem;
+  border: 1px solid red;
+  padding: 2rem 0 2rem 0;
+}
+
+.exhibit-content {
+  display: flex;
+  margin: 0 1.5rem 0 1.5rem;
+}
+
+.exhibit-left {
+  display: flex;
+  border: 1px solid red;
+  flex-direction: column;
+  width: 60%;
+  margin-right: 12px;
+  padding-bottom: 2rem;
+}
+
+.exhibit-video {
+
+}
+
+.exhibit-leftcontent h2 {
+  font-size: 1.5rem;
+  margin: 1.5rem 0rem .75rem 0rem;
+  font-weight: 400;
+
+}
+
+.exhibit-right {
+  display: flex;
+  flex-direction: column;
+}
+
+.exhibit-rightcontent-top {
+  display: flex;
+  flex-direction: row;
+  border: 1px solid red;
+}
+
+.exhibit-right img {
+  padding: 1rem;
+}
+
+
+.exhibit-rightcontent-bottom {
+  display: flex;
+  flex-direction: row;
+  border: 1px solid red;
+}
